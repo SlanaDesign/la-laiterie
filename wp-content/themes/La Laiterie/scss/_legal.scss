@@ -1,0 +1,70 @@
+.legal{
+
+  h2{
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 150px;
+    background: #ffdb01;
+    color: white;
+    margin-top: 0px;
+    position: relative;
+    z-index: 2;
+    padding-left: 10%;
+    padding-top: 15px;
+    text-transform:uppercase;
+    font-size: 30px;
+  }
+}
+
+.contenu_legal{
+  padding: 20px;
+  padding-top: 5px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  background: #FFF;
+  margin-top: -60px;
+  display: block;
+  width: 80%;
+  text-align: justify;
+  h1{
+    color: #ffdb01;
+  }
+  h2 {
+    color: #58e8fe;
+  }
+}
+
+.compte{
+  position: relative;
+  z-index: 3;
+  padding: 15px;
+  background: #FFF;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: -40px;
+
+  label{
+    font-size: 15px;
+    font-weight: 700;
+  }
+  input{
+
+    height: 30px;
+  }
+  .validation{
+    background: #ffdb01;
+    color: #000;
+    height: 30px;
+    display: block;
+    width: 180px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-left: 73%;
+    text-align: center;
+  }
+}

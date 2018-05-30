@@ -1,0 +1,256 @@
+.page_artiste{
+  width: 100%;
+  display: block;
+  margin-bottom: 70px;
+
+  article {
+    width: 100%;
+    display: block;
+    img.image_principale{
+      display: block;
+    width: 100%!important;
+    position: relative;
+    z-index: 1;
+    }
+    div{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 130px;
+    background: #ffdb01;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+    padding-left: 10%;
+    padding-top: 5px;
+    h2{
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+    h3{
+      color: white;
+      margin-top: -30px;
+      padding-left: 10%;
+      font-size: 17px;
+    }
+    }
+  }
+
+  .sidebar{
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+    background: #58e8fe;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: -30px;
+    padding: 10px;
+    padding-left: 15px;
+
+    h3{
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    a{
+      background: white;
+      display: block;
+      border-radius: 50px;
+      height: 30px;
+      width: 150px;
+      line-height: 30px;
+      text-align: center;
+      margin:0 auto;
+      font-weight: 700;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .contenu_artiste{
+    display: inline-block;
+    width: 100%;
+    margin-left: 0%;
+    vertical-align: top;
+    padding: 15px;
+    padding-top: 10px;
+    margin-bottom: 100px;
+
+
+
+    div.video{
+      background: none;
+      width: 90%;
+      margin-top: 30px;
+      margin-left: -10px;
+      iframe{
+        width: 100%;
+        height: 230px;
+      }
+    }
+  }
+}
+
+.aimer_aussi{
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: center;
+  h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    img{display: none;}
+  }
+  article{
+  display: inline-block;
+  width: 90%;
+  margin: 0 auto!important;
+  margin-bottom: 30px!important;
+  img{
+    height: 150px;
+    width: 90%;
+  }
+  h2{
+    color: #ffdb01;
+    margin-top: -5px;
+    margin-bottom: -6px;
+    font-size: 30px;
+
+
+  }
+  span{
+    font-weight: 700;
+    padding-left: 10%;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  }
+}
+
+@media screen and (min-width: 700px){
+
+.page_artiste{
+  width: 100%;
+  display: block;
+  margin-bottom: 70px;
+
+  article {
+    width: 100%;
+    display: block;
+    img.image_principale{
+      display: block;
+    width: 100%!important;
+    position: relative;
+    z-index: 1;
+    }
+    div{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 150px;
+    background: #ffdb01;
+    margin-top: -65px;
+    position: relative;
+    z-index: 2;
+    padding-left: 10%;
+    padding-top: 5px;
+    h2{
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+    h3{
+      color: white;
+      margin-top: -30px;
+      padding-left: 10%;
+      font-size: 20px;
+    }
+    }
+  }
+  .sidebar{
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+    background: #58e8fe;
+    width: 25%;
+    margin-left: 8%;
+    margin-top: -30px;
+    padding: 10px;
+    padding-left: 15px;
+
+    h3{
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    a{
+      background: white;
+      display: block;
+      border-radius: 50px;
+      height: 30px;
+      width: 150px;
+      line-height: 30px;
+      text-align: center;
+      margin-left: 55%;
+      font-weight: 700;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  .contenu_artiste{
+    display: inline-block;
+    width: 40%;
+    margin-left: 5%;
+    vertical-align: top;
+    padding-top: 10px;
+    margin-bottom: 100px;
+
+
+    div.video{
+      background: none;
+      width: 100%;
+      margin-top: 30px;
+      margin-left: 0px;
+      iframe{
+        width: 100%;
+        height: 230px;
+      }
+    }
+  }
+}
+  .aimer_aussi{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    h2{
+      font-size: 30px;
+      text-transform: uppercase;
+      img{display: inline-block;}
+    }
+    article{
+    display: inline-block;
+    width: 49%;
+    img{
+      height: 150px;
+      width: 350px;
+    }
+    h2{
+      color: #ffdb01;
+      margin-top: -5px;
+      margin-bottom: -6px;
+      font-size: 30px;
+
+    }
+    span{
+      font-weight: 700;
+      padding-left: 10%;
+      font-size: 15px;
+      text-transform: uppercase;
+    }
+    }
+  }
+
+  .mt-order{
+    display: none;
+  }
+
+}

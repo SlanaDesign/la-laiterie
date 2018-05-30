@@ -1,0 +1,2216 @@
+/*
+	Theme Name: HTML5 Blank
+	Theme URI: http://html5blank.com
+	Description: HTML5 Blank WordPress Theme
+	Version: 1.4.3
+	Author: Todd Motto (@toddmotto)
+	Author URI: http://toddmotto.com
+	Tags: Blank, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+/*------------------------------------*    MAIN
+\*------------------------------------*/
+/* global box-sizing */
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+/* line 19, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+*,
+*:after,
+*:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* html element 62.5% font-size for REM use */
+/* line 29, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 32, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+body {
+  font: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #444;
+}
+
+/* clear */
+/* line 37, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+.clear:before,
+.clear:after {
+  content: ' ';
+  display: table;
+}
+
+/* line 43, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+.clear:after {
+  clear: both;
+}
+
+/* line 46, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+.clear {
+  *zoom: 1;
+}
+
+/* line 50, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+a {
+  color: #444;
+  text-decoration: none;
+}
+
+/* line 54, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+a:hover {
+  color: #444;
+}
+
+/* line 57, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+a:focus {
+  outline: 0;
+}
+
+/* line 60, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+a:hover,
+a:active {
+  outline: 0;
+}
+
+/* line 64, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+input:focus {
+  outline: 0;
+  border: 1px solid #04A4CC;
+}
+
+/*------------------------------------*    STRUCTURE
+\*------------------------------------*/
+/* wrapper */
+/* line 74, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+.wrapper {
+  max-width: 1280px;
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* header */
+/* logo */
+/* nav */
+/* sidebar */
+/* footer */
+/*------------------------------------*    PAGES
+\*------------------------------------*/
+/*------------------------------------*    IMAGES
+\*------------------------------------*/
+/*------------------------------------*	TYPOGRAPHY
+\*------------------------------------*/
+@font-face {
+  font-family: 'Font-Name';
+  src: url("fonts/font-name.eot");
+  src: url("fonts/font-name.eot?#iefix") format("embedded-opentype"), url("fonts/font-name.woff") format("woff"), url("fonts/font-name.ttf") format("truetype"), url("fonts/font-name.svg#font-name") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*------------------------------------*    RESPONSIVE
+\*------------------------------------*/
+/*------------------------------------*    MISC
+\*------------------------------------*/
+/* line 162, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+::selection {
+  background: #04A4CC;
+  color: #FFF;
+  text-shadow: none;
+}
+
+/* line 167, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+::-webkit-selection {
+  background: #04A4CC;
+  color: #FFF;
+  text-shadow: none;
+}
+
+/* line 172, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+::-moz-selection {
+  background: #04A4CC;
+  color: #FFF;
+  text-shadow: none;
+}
+
+/*------------------------------------*    WORDPRESS CORE
+\*------------------------------------*/
+/* line 182, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+/* line 185, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+/* line 190, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+/* line 194, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+/* line 200, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+.wp-caption {
+  background: #FFF;
+  border: 1px solid #F0F0F0;
+  max-width: 96%;
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+
+/* line 207, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+/* line 210, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+
+/* line 213, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+
+/* line 217, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+.wp-caption .wp-caption-text,
+.gallery-caption {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+
+/*------------------------------------*    PRINT
+\*------------------------------------*/
+@media print {
+  /* line 236, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  /* line 242, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  /* line 246, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  /* line 249, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /* line 252, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  /* line 257, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /* line 261, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+  thead {
+    display: table-header-group;
+  }
+  /* line 264, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+  tr, img {
+    page-break-inside: avoid;
+  }
+  @page {
+    margin: 0.5cm;
+  }
+  /* line 271, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  /* line 277, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_reset.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/* Slider */
+/* line 37, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_slick-theme.scss */
+.slick-loading .slick-list {
+  background: #fff url("./ajax-loader.gif") center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url("./fonts/slick.eot");
+  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Arrows */
+/* line 57, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_slick-theme.scss */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: black;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+/* line 75, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_slick-theme.scss */
+.slick-prev:hover, .slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  outline: none;
+  background: transparent;
+  color: transparent;
+}
+
+/* line 79, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_slick-theme.scss */
+.slick-prev:hover:before, .slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+
+/* line 83, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_slick-theme.scss */
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+
+/* line 86, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_slick-theme.scss */
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  color: black;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 98, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_slick-theme.scss */
+.slick-prev {
+  left: -80px;
+}
+
+/* line 100, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_slick-theme.scss */
+[dir="rtl"] .slick-prev {
+  left: auto;
+  right: -25px;
+}
+
+/* line 109, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_slick-theme.scss */
+.slick-next {
+  right: 25px;
+}
+
+/* line 111, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_slick-theme.scss */
+[dir="rtl"] .slick-next {
+  left: -25px;
+  right: auto;
+}
+
+/* Dots */
+/* line 123, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_slick-theme.scss */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+/* line 127, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_slick-theme.scss */
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* line 136, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_slick-theme.scss */
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* line 144, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_slick-theme.scss */
+.slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* line 156, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_slick-theme.scss */
+.slick-dots li button:hover, .slick-dots li button:focus {
+  outline: none;
+}
+
+/* line 158, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_slick-theme.scss */
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+/* line 162, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_slick-theme.scss */
+.slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+  color: black;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 178, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_slick-theme.scss */
+.slick-dots li.slick-active button:before {
+  color: black;
+  opacity: 0.75;
+}
+
+/* line 1, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_header.scss */
+.nav {
+  display: none;
+}
+
+/* line 5, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_header.scss */
+#responsive-menu-button {
+  background: none !important;
+}
+
+/* line 9, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_header.scss */
+#responsive-menu-container {
+  background: #61dbea !important;
+  width: 100% !important;
+}
+
+/* line 14, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_header.scss */
+#responsive-menu-search-box {
+  display: none !important;
+}
+
+/* line 17, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_header.scss */
+#responsive-menu-additional-content {
+  display: none !important;
+}
+
+/* line 21, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_header.scss */
+#responsive-menu {
+  background: #61dbea !important;
+  padding: 15px !important;
+}
+
+/* line 25, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_header.scss */
+.responsive-menu-item-link {
+  background: #61dbea !important;
+  border: none !important;
+  font-size: 30px !important;
+  margin-bottom: 20px !important;
+}
+
+@media screen and (min-width: 700px) {
+  /* line 38, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_header.scss */
+  .nav {
+    display: inline-block;
+  }
+  /* line 41, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_header.scss */
+  .wrapper {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  /* line 45, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_header.scss */
+  .wrapper .nav {
+    background: #FFF;
+    height: 60px;
+    padding-top: 15px;
+    font-family: 'Roboto Mono', monospace;
+  }
+  /* line 50, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_header.scss */
+  .wrapper .nav ul {
+    list-style-type: none;
+  }
+  /* line 52, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_header.scss */
+  .wrapper .nav ul li {
+    display: inline-block;
+    margin-right: 60px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+  }
+  /* line 58, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_header.scss */
+  .wrapper .nav ul li a {
+    color: #34d5e7;
+  }
+  /* line 65, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_header.scss */
+  .wrapper .nav ul li:last-child a {
+    color: #fe7cb8 !important;
+  }
+}
+
+/* line 1, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+* {
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* line 4, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+.wrapper {
+  width: 100%;
+}
+
+/* line 7, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+.image {
+  position: relative;
+}
+
+/* line 9, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+.image .attachment-post-thumbnail {
+  width: 100%;
+  z-index: 1;
+}
+
+/* line 13, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+.image .arrow {
+  display: none;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+/* line 24, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+#en_avant {
+  font-family: 'Roboto Mono', monospace;
+  margin-top: -50px !important;
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+/* line 33, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+#en_avant a {
+  display: block;
+}
+
+/* line 35, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+#en_avant a article.artiste {
+  margin: 0 auto;
+  height: 150px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #FFF;
+  text-align: left;
+}
+
+/* line 43, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+#en_avant a article.artiste h2 {
+  margin-top: 91px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* line 52, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+#en_avant a article.artiste h3 {
+  color: #000;
+  background: white;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  margin-top: -20px;
+  margin-left: 0%;
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 74, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+.new {
+  display: inline-block;
+  background: #57e8fe;
+  height: 150px;
+  width: 100%;
+  display: block;
+  margin-top: -14px;
+}
+
+/* line 83, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+.new article:first-child {
+  text-align: center;
+  display: inline-block;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* line 90, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+.new article:first-child h2 {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: -30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* line 98, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+.new article:first-child span {
+  font-family: 'Dancing Script', cursive;
+  text-transform: none;
+  color: black;
+  font-size: 15px;
+}
+
+/* line 106, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+.new article:last-child {
+  width: 90%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 5px;
+  padding-left: 10%;
+}
+
+/* line 113, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+.new input, .new textarea {
+  border-radius: 50px;
+  border: none;
+  box-shadow: none;
+  height: 30px;
+  width: 90%;
+  display: inline-block !important;
+}
+
+/* line 120, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+.new input:focus, .new textarea:focus {
+  border: 1px solid #35b0ed;
+}
+
+/* line 124, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+.new input[type="submit"] {
+  display: inline-block;
+  width: 20px !important;
+  background: none;
+  color: white;
+  font-weight: 700;
+  text-transform: none;
+}
+
+/* line 135, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+section.artefact_cassette {
+  height: 400px;
+  background: #ffdb01;
+  text-align: right;
+  position: relative;
+}
+
+/* line 140, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+section.artefact_cassette .fille_jaune {
+  display: none;
+}
+
+/* line 144, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+section.artefact_cassette a.compte {
+  position: absolute;
+  z-index: 4;
+  bottom: 10px;
+  left: 50%;
+  background: none;
+  border: 1.5px solid #000;
+  border-radius: 50px;
+  padding: 10px;
+  display: block;
+  width: 150px;
+  text-align: center;
+  font-weight: 900;
+}
+
+/* line 159, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+.artefact {
+  height: 400px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-left: 20%;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 168, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+.artefact .slider-home {
+  display: inline-block;
+  height: 400px;
+  width: 100%;
+}
+
+/* line 173, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+.artefact .slider-home .slick-prev {
+  content: "";
+  left: -50px;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: url("img/arrow_left.png") no-repeat;
+  background-size: contain;
+}
+
+/* line 182, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+.artefact .slider-home .slick-next {
+  ontent: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: url("img/arrow_right.png") no-repeat;
+  background-size: contain;
+}
+
+/* line 191, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+.artefact .slider-home h2 {
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: right;
+  padding-right: 15%;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+/* line 199, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+.artefact .slider-home h2 span {
+  font-weight: 700;
+}
+
+/* line 203, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+.artefact .slider-home h3 {
+  text-align: left;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* line 211, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+.artefact .slider-home p {
+  width: 70%;
+  text-align: left;
+}
+
+/* line 217, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+article.cassette {
+  background: #68dec7;
+  display: none;
+  height: 400px;
+  width: 49%;
+  vertical-align: top;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 226, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+article.cassette img {
+  height: 400px;
+}
+
+@media screen and (max-width: 700px) {
+  /* line 233, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation {
+    font-family: 'Roboto Mono', monospace;
+    background: #ffdb01;
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 100px;
+    margin-bottom: 0px;
+    padding-left: 3%;
+    position: relative;
+  }
+  /* line 244, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .tuiles {
+    margin: 0 auto;
+    width: 90%;
+    margin-top: -20px;
+  }
+  /* line 249, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .tuiles h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  /* line 254, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .tuiles a {
+    display: block;
+    height: 110px;
+    background: white;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 10px;
+  }
+  /* line 262, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .tuiles a article {
+    height: 110px;
+    width: 35%;
+    float: left;
+    margin-right: 10px;
+  }
+  /* line 269, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .tuiles a h2 {
+    padding-top: 35px;
+    text-transform: uppercase;
+    color: #57e8fe;
+    font-size: 15px;
+  }
+  /* line 279, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .tuiles a:nth-child(odd) h2 {
+    color: #ffdb01;
+  }
+  /* line 281, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .tuiles a:nth-child(odd) article {
+    float: right;
+    margin-right: 0px;
+  }
+  /* line 287, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .tuiles a span {
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+  /* line 295, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .voir_plus {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    background: none;
+    border: 1.5px solid #000;
+    border-radius: 50px;
+    padding: 10px;
+    display: block;
+    width: 150px;
+    text-align: center;
+    font-weight: 900;
+  }
+  /* line 310, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .en_avant_deux {
+    display: none;
+    margin-left: 10px;
+  }
+  /* line 313, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .en_avant_deux a {
+    height: 105.5;
+    margin-top: -42px;
+  }
+  /* line 316, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .en_avant_deux a article {
+    height: 105.5%;
+    margin-top: -42px;
+  }
+  /* line 319, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .en_avant_deux a article .artiste {
+    height: 105.5;
+  }
+  /* line 322, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .en_avant_deux a article h2 {
+    padding-top: 210%;
+    margin-bottom: -10px;
+    color: white;
+    font-size: 33px;
+    text-transform: uppercase;
+    padding-left: 5px;
+  }
+  /* line 330, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .en_avant_deux a article h3 {
+    background: #fff;
+    width: 80%;
+    padding-left: 5px;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  /* line 345, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .image {
+    position: relative;
+  }
+  /* line 347, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .image .attachment-post-thumbnail {
+    width: 100%;
+    z-index: 1;
+  }
+  /* line 351, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .image .arrow {
+    display: block;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  /* line 362, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  #en_avant {
+    font-family: 'Roboto Mono', monospace;
+    margin-top: -70px !important;
+    position: relative;
+    z-index: 2;
+    width: 75%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    justify-content: space-between;
+  }
+  /* line 374, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  #en_avant a {
+    display: block;
+    flex: 1 1 100%;
+  }
+  /* line 377, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  #en_avant a article.artiste {
+    margin: 0 auto;
+    width: 100%;
+    height: 480px;
+    margin-bottom: 10px;
+    border: 1px solid #FFF;
+    text-align: left;
+  }
+  /* line 385, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  #en_avant a article.artiste h2 {
+    width: 480px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 15%;
+    font-size: 28px;
+    background: #FFF;
+    margin-top: 40%;
+    color: #57e8fe;
+    text-transform: uppercase;
+  }
+  /* line 396, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  #en_avant a article.artiste h3 {
+    background: #FFF;
+    width: 35%;
+    height: 30px;
+    line-height: 30px;
+    margin-top: -25px;
+    margin-left: 25%;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  /* line 412, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  #en_avant a + a {
+    flex: 0 0 49.5%;
+  }
+  /* line 414, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  #en_avant a + a article:first-child {
+    width: 100%;
+    height: 330px;
+  }
+  /* line 417, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  #en_avant a + a article:first-child h2 {
+    width: 300px;
+    color: #ffdb01;
+    margin-top: 50%;
+  }
+  /* line 422, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  #en_avant a + a article:first-child h3 {
+    display: none;
+  }
+  /* line 431, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation {
+    font-family: 'Roboto Mono', monospace;
+    background: #ffdb01;
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 100px;
+    margin-bottom: 0px;
+    padding-left: 13%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  /* line 443, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .tuiles {
+    margin-top: -40px;
+    flex: 0 0 60%;
+  }
+  /* line 446, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .tuiles h3 {
+    display: none;
+  }
+  /* line 449, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .tuiles a {
+    display: block;
+    height: 110px;
+    background: white;
+    margin-bottom: -20px;
+    text-align: center;
+    line-height: 10px;
+  }
+  /* line 457, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .tuiles a article {
+    height: 110px;
+    width: 35%;
+    float: left;
+    margin-right: 10px;
+  }
+  /* line 464, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .tuiles a h2 {
+    padding-top: 35px;
+    text-transform: uppercase;
+    color: #57e8fe;
+    font-size: 30px;
+  }
+  /* line 474, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .tuiles a:nth-child(odd) h2 {
+    color: #ffdb01;
+  }
+  /* line 476, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .tuiles a:nth-child(odd) article {
+    float: right;
+    margin-right: 0px;
+  }
+  /* line 482, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .tuiles a span {
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  /* line 490, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .voir_plus {
+    position: absolute;
+    bottom: 20px;
+    right: 425px;
+    background: none;
+    border: 1.5px solid #000;
+    border-radius: 50px;
+    padding: 10px;
+    display: block;
+    width: 150px;
+    text-align: center;
+    font-weight: 900;
+  }
+  /* line 505, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .en_avant_deux {
+    flex: 0 0 23.5%;
+    margin-left: 10px;
+  }
+  /* line 509, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .en_avant_deux a {
+    height: 105.5;
+    margin-top: -42px;
+  }
+  /* line 512, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .en_avant_deux a article {
+    height: 105.5%;
+    margin-top: -42px;
+  }
+  /* line 515, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .en_avant_deux a article .artiste {
+    height: 105.5;
+  }
+  /* line 518, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .en_avant_deux a article h2 {
+    padding-top: 210%;
+    margin-bottom: -10px;
+    color: white;
+    font-size: 33px;
+    text-transform: uppercase;
+    padding-left: 5px;
+  }
+  /* line 526, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .programation .en_avant_deux a article h3 {
+    background: #fff;
+    width: 80%;
+    padding-left: 5px;
+    text-transform: uppercase;
+  }
+  /* line 538, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .new {
+    display: inline-block;
+    background: #57e8fe;
+    height: 100px;
+    width: 100%;
+    display: block;
+    margin-top: -14px;
+  }
+  /* line 547, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .new article:first-child {
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+    margin-top: 10px;
+    padding-left: 15%;
+  }
+  /* line 554, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .new article:first-child h2 {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: -30px;
+    font-size: 30px;
+  }
+  /* line 561, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .new article:first-child span {
+    font-family: 'Dancing Script', cursive;
+    text-transform: none;
+    color: black;
+    font-size: 15px;
+  }
+  /* line 569, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .new article:last-child {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 15px;
+    padding-left: 10%;
+  }
+  /* line 576, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .new input, .new textarea {
+    border-radius: 50px;
+    border: none;
+    box-shadow: none;
+    height: 30px;
+    width: 40%;
+    display: inline-block !important;
+  }
+  /* line 583, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .new input:focus, .new textarea:focus {
+    border: 1px solid #35b0ed;
+  }
+  /* line 587, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .new input[type="submit"] {
+    display: inline-block;
+    width: 20px !important;
+    background: none;
+    color: white;
+    font-weight: 700;
+    text-transform: none;
+  }
+  /* line 598, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  section.artefact_cassette {
+    height: 400px;
+    background: #ffdb01;
+    text-align: right;
+    position: relative;
+  }
+  /* line 603, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  section.artefact_cassette .fille_jaune {
+    display: block;
+    position: absolute;
+    background: url("img/fille_jaune.png") no-repeat;
+    background-size: contain;
+    height: 400px;
+    width: 300px;
+    z-index: 2;
+    top: 190px;
+    left: 470px;
+  }
+  /* line 614, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  section.artefact_cassette a.compte {
+    position: absolute;
+    z-index: 4;
+    bottom: 30px;
+    left: 370px;
+    background: none;
+    border: 1.5px solid #000;
+    border-radius: 50px;
+    padding: 10px;
+    display: block;
+    width: 150px;
+    text-align: center;
+    font-weight: 900;
+  }
+  /* line 629, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .artefact {
+    height: 400px;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    padding-left: 20%;
+    position: relative;
+    z-index: 2;
+  }
+  /* line 638, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .artefact .slider-home {
+    display: inline-block;
+    height: 400px;
+    width: 100%;
+  }
+  /* line 643, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .artefact .slider-home .slick-prev {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url("img/arrow_left.png") no-repeat;
+    background-size: contain;
+  }
+  /* line 651, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .artefact .slider-home .slick-next {
+    ontent: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url("img/arrow_right.png") no-repeat;
+    background-size: contain;
+  }
+  /* line 660, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .artefact .slider-home h2 {
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: right;
+    padding-right: 15%;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+  /* line 668, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .artefact .slider-home h2 span {
+    font-weight: 700;
+  }
+  /* line 672, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .artefact .slider-home h3 {
+    text-align: left;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  /* line 680, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  .artefact .slider-home p {
+    width: 70%;
+    text-align: left;
+  }
+  /* line 686, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  article.cassette {
+    background: #68dec7;
+    display: inline-block;
+    height: 400px;
+    width: 49%;
+    vertical-align: top;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  /* line 695, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_home.scss */
+  article.cassette img {
+    height: 400px;
+  }
+}
+
+/* line 1, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_footer.scss */
+footer {
+  background: url("img/footer.jpg") no-repeat bottom;
+  background-size: cover;
+  height: 350px;
+}
+
+/* line 6, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_footer.scss */
+footer article {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  padding-top: 30px;
+}
+
+/* line 12, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_footer.scss */
+footer article div {
+  padding-left: 15%;
+  text-align: center;
+}
+
+/* line 15, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_footer.scss */
+footer article div h4 {
+  font-weight: 700;
+  font-size: 15px;
+  color: black;
+}
+
+/* line 20, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_footer.scss */
+footer article div img {
+  width: 50px;
+  margin-right: 30px;
+}
+
+/* line 26, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_footer.scss */
+footer article nav {
+  display: block;
+}
+
+/* line 27, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_footer.scss */
+footer article .nav {
+  padding-top: 0px !important;
+  background: none !important;
+}
+
+/* line 30, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_footer.scss */
+footer article .nav ul {
+  text-align: right !important;
+}
+
+/* line 32, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_footer.scss */
+footer article .nav ul li {
+  display: block !important;
+}
+
+/* line 34, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_footer.scss */
+footer article .nav ul li a {
+  color: black !important;
+  text-transform: none !important;
+  font-size: 12px !important;
+}
+
+/* line 41, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_footer.scss */
+footer article .nav ul li:last-child a {
+  display: none;
+}
+
+/* line 50, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_footer.scss */
+footer article .main-navigation ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+/* line 53, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_footer.scss */
+footer article .main-navigation ul li {
+  font-weight: 700;
+  font-size: 12px !important;
+}
+
+/* line 56, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_footer.scss */
+footer article .main-navigation ul li a {
+  color: black;
+}
+
+@media screen and (min-width: 700px) {
+  /* line 70, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_footer.scss */
+  footer article {
+    width: 30%;
+  }
+  /* line 75, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_footer.scss */
+  footer .main-navigation ul {
+    text-align: right;
+  }
+}
+
+/* line 1, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+.page_artiste {
+  width: 100%;
+  display: block;
+  margin-bottom: 70px;
+}
+
+/* line 6, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+.page_artiste article {
+  width: 100%;
+  display: block;
+}
+
+/* line 9, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+.page_artiste article img.image_principale {
+  display: block;
+  width: 100% !important;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 15, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+.page_artiste article div {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 130px;
+  background: #ffdb01;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+  padding-left: 10%;
+  padding-top: 5px;
+}
+
+/* line 26, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+.page_artiste article div h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+/* line 30, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+.page_artiste article div h3 {
+  color: white;
+  margin-top: -30px;
+  padding-left: 10%;
+  font-size: 17px;
+}
+
+/* line 39, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+.page_artiste .sidebar {
+  display: inline-block;
+  position: relative;
+  z-index: 3;
+  background: #58e8fe;
+  width: 100%;
+  margin-left: 0%;
+  margin-top: -30px;
+  padding: 10px;
+  padding-left: 15px;
+}
+
+/* line 50, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+.page_artiste .sidebar h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* line 55, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+.page_artiste .sidebar a {
+  background: white;
+  display: block;
+  border-radius: 50px;
+  height: 30px;
+  width: 150px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 70, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+.page_artiste .contenu_artiste {
+  display: inline-block;
+  width: 100%;
+  margin-left: 0%;
+  vertical-align: top;
+  padding: 15px;
+  padding-top: 10px;
+  margin-bottom: 100px;
+}
+
+/* line 81, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+.page_artiste .contenu_artiste div.video {
+  background: none;
+  width: 90%;
+  margin-top: 30px;
+  margin-left: -10px;
+}
+
+/* line 86, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+.page_artiste .contenu_artiste div.video iframe {
+  width: 100%;
+  height: 230px;
+}
+
+/* line 94, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+.aimer_aussi {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* line 99, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+.aimer_aussi h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+/* line 102, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+.aimer_aussi h2 img {
+  display: none;
+}
+
+/* line 104, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+.aimer_aussi article {
+  display: inline-block;
+  width: 90%;
+  margin: 0 auto !important;
+  margin-bottom: 30px !important;
+}
+
+/* line 109, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+.aimer_aussi article img {
+  height: 150px;
+  width: 90%;
+}
+
+/* line 113, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+.aimer_aussi article h2 {
+  color: #ffdb01;
+  margin-top: -5px;
+  margin-bottom: -6px;
+  font-size: 30px;
+}
+
+/* line 121, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+.aimer_aussi article span {
+  font-weight: 700;
+  padding-left: 10%;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 700px) {
+  /* line 132, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+  .page_artiste {
+    width: 100%;
+    display: block;
+    margin-bottom: 70px;
+  }
+  /* line 137, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+  .page_artiste article {
+    width: 100%;
+    display: block;
+  }
+  /* line 140, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+  .page_artiste article img.image_principale {
+    display: block;
+    width: 100% !important;
+    position: relative;
+    z-index: 1;
+  }
+  /* line 146, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+  .page_artiste article div {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 150px;
+    background: #ffdb01;
+    margin-top: -65px;
+    position: relative;
+    z-index: 2;
+    padding-left: 10%;
+    padding-top: 5px;
+  }
+  /* line 157, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+  .page_artiste article div h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+  /* line 161, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+  .page_artiste article div h3 {
+    color: white;
+    margin-top: -30px;
+    padding-left: 10%;
+    font-size: 20px;
+  }
+  /* line 169, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+  .page_artiste .sidebar {
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+    background: #58e8fe;
+    width: 25%;
+    margin-left: 8%;
+    margin-top: -30px;
+    padding: 10px;
+    padding-left: 15px;
+  }
+  /* line 180, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+  .page_artiste .sidebar h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  /* line 185, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+  .page_artiste .sidebar a {
+    background: white;
+    display: block;
+    border-radius: 50px;
+    height: 30px;
+    width: 150px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 55%;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  /* line 199, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+  .page_artiste .contenu_artiste {
+    display: inline-block;
+    width: 40%;
+    margin-left: 5%;
+    vertical-align: top;
+    padding-top: 10px;
+    margin-bottom: 100px;
+  }
+  /* line 208, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+  .page_artiste .contenu_artiste div.video {
+    background: none;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+  /* line 213, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+  .page_artiste .contenu_artiste div.video iframe {
+    width: 100%;
+    height: 230px;
+  }
+  /* line 220, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+  .aimer_aussi {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  /* line 224, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+  .aimer_aussi h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+  /* line 227, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+  .aimer_aussi h2 img {
+    display: inline-block;
+  }
+  /* line 229, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+  .aimer_aussi article {
+    display: inline-block;
+    width: 49%;
+  }
+  /* line 232, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+  .aimer_aussi article img {
+    height: 150px;
+    width: 350px;
+  }
+  /* line 236, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+  .aimer_aussi article h2 {
+    color: #ffdb01;
+    margin-top: -5px;
+    margin-bottom: -6px;
+    font-size: 30px;
+  }
+  /* line 243, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+  .aimer_aussi article span {
+    font-weight: 700;
+    padding-left: 10%;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  /* line 252, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_page-artiste.scss */
+  .mt-order {
+    display: none;
+  }
+}
+
+/* line 1, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_programmation.scss */
+.prog {
+  width: 100%;
+  position: relative;
+}
+
+/* line 4, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_programmation.scss */
+.prog img {
+  width: 100%;
+  z-index: 1;
+}
+
+/* line 8, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_programmation.scss */
+.prog .arrow {
+  display: block;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+}
+
+/* line 20, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_programmation.scss */
+.programmation h2 {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 150px;
+  background: #ffdb01;
+  color: white;
+  margin-top: -45px;
+  position: relative;
+  z-index: 2;
+  padding-left: 10%;
+  padding-top: 15px;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+/* line 38, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_programmation.scss */
+.programmation .la_liste {
+  position: relative;
+  z-index: 2;
+  background: #FFF;
+  display: block;
+  width: 95%;
+  margin: 0  auto;
+  text-align: center;
+  margin-top: -60px;
+  padding: 30px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+/* line 51, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_programmation.scss */
+.programmation .la_liste article {
+  border-bottom: 3px solid #ffdb01;
+  width: 75%;
+  margin-bottom: 20px;
+  display: inline-block;
+  vertical-align: bottom;
+  position: relative;
+}
+
+/* line 58, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_programmation.scss */
+.programmation .la_liste article .panier {
+  width: 30px;
+  display: inline-block;
+  position: absolute;
+  left: 2%;
+  top: -10px;
+}
+
+/* line 65, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_programmation.scss */
+.programmation .la_liste article h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: -3px;
+  color: #ffdb01;
+}
+
+/* line 71, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_programmation.scss */
+.programmation .la_liste article span {
+  padding-left: 10%;
+  font-size: 15px;
+}
+
+/* line 76, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_programmation.scss */
+.programmation .la_liste .image_groupe {
+  display: inline-block;
+  width: 25%;
+  height: 100px;
+}
+
+@media screen and (min-width: 700px) {
+  /* line 96, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_programmation.scss */
+  .programmation .prog .arrow {
+    display: block;
+  }
+  /* line 102, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_programmation.scss */
+  .programmation h2 {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 150px;
+    background: #ffdb01;
+    color: white;
+    margin-top: -65px;
+    position: relative;
+    z-index: 2;
+    padding-left: 10%;
+    padding-top: 15px;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  /* line 119, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_programmation.scss */
+  .programmation .la_liste {
+    position: relative;
+    z-index: 2;
+    background: #FFF;
+    display: block;
+    width: 70%;
+    margin: 0  auto;
+    text-align: center;
+    margin-top: -60px;
+    padding: 30px;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  /* line 133, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_programmation.scss */
+  .programmation .la_liste article {
+    border-bottom: 3px solid #ffdb01;
+    width: 50%;
+    margin-bottom: 20px;
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
+  }
+  /* line 140, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_programmation.scss */
+  .programmation .la_liste article .panier {
+    width: 20px;
+    display: inline-block;
+    position: absolute;
+    left: 10%;
+    top: 35%;
+  }
+  /* line 147, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_programmation.scss */
+  .programmation .la_liste article h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: -3px;
+    color: #ffdb01;
+  }
+  /* line 153, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_programmation.scss */
+  .programmation .la_liste article span {
+    padding-left: 10%;
+    font-size: 15px;
+  }
+  /* line 160, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_programmation.scss */
+  .programmation .la_liste .image_groupe {
+    display: inline-block;
+    width: 30%;
+    height: 100px;
+  }
+}
+
+/* line 2, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_infos.scss */
+#infos h2 {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 150px;
+  background: #ffdb01;
+  color: white;
+  margin-top: -45px;
+  position: relative;
+  z-index: 2;
+  padding-left: 10%;
+  padding-top: 15px;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+/* line 19, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_infos.scss */
+#infos article {
+  position: relative;
+  z-index: 2;
+  background: #FFF;
+  display: block;
+  width: 95%;
+  margin: 0  auto;
+  text-align: center;
+  margin-top: -60px;
+  padding: 30px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+/* line 33, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_infos.scss */
+#infos div {
+  display: inline-block !important;
+  vertical-align: top;
+}
+
+/* line 36, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_infos.scss */
+#infos div h3 {
+  text-align: left;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #ffdb01;
+}
+
+/* line 42, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_infos.scss */
+#infos div iframe {
+  width: 100%;
+  height: 300px;
+}
+
+/* line 46, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_infos.scss */
+#infos div:first-child {
+  margin-right: 0px !important;
+}
+
+/* line 50, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_infos.scss */
+#infos .telephone {
+  color: #58e8fe;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+/* line 55, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_infos.scss */
+#infos .horraire {
+  font-size: 12px;
+}
+
+/* line 59, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_infos.scss */
+#infos .mail a {
+  color: #58e8fe;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 700px) {
+  /* line 70, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_infos.scss */
+  #infos h2 {
+    width: 80%;
+    margin-top: -65px;
+  }
+  /* line 75, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_infos.scss */
+  #infos article {
+    width: 70%;
+  }
+  /* line 81, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_infos.scss */
+  #infos div:first-child {
+    margin-right: 20px !important;
+  }
+}
+
+/* line 2, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+section.panier div.titre {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 150px;
+  background: #ffdb01;
+  color: white;
+  margin-top: 5px;
+  position: relative;
+  z-index: 2;
+  padding-left: 10%;
+  padding-top: 15px;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+/* line 18, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+section.panier div.titre h2 {
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+/* line 28, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+section.panier .la_liste {
+  position: relative;
+  z-index: 2;
+  background: #FFF;
+  display: block;
+  width: 70%;
+  margin: 0  auto;
+  text-align: center;
+  margin-top: -60px;
+  padding: 30px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+/* line 41, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+section.panier .la_liste .validation {
+  background: #ffdb01;
+  color: #000;
+  height: 30px;
+  display: block;
+  width: 180px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-left: 73%;
+}
+
+/* line 52, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+section.panier .la_liste article {
+  border-bottom: 3px solid #ffdb01;
+  width: 40%;
+  margin-bottom: 20px;
+  display: inline-block;
+  vertical-align: bottom;
+  position: relative;
+}
+
+/* line 61, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+section.panier .la_liste article .panier {
+  width: 20px;
+  display: inline-block;
+  position: absolute;
+  left: 10%;
+  top: 35%;
+}
+
+/* line 68, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+section.panier .la_liste article h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: -3px;
+  color: #ffdb01;
+}
+
+/* line 74, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+section.panier .la_liste article span {
+  padding-left: 10%;
+  font-size: 15px;
+}
+
+/* line 81, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+section.panier .la_liste .image_groupe {
+  display: inline-block;
+  width: 30%;
+  height: 100px;
+}
+
+/* line 87, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+section.panier .la_liste .quantite {
+  vertical-align: top;
+  height: 100px;
+  line-height: 50px;
+  width: 10% !important;
+}
+
+/* line 95, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+section.panier .la_liste .total {
+  display: block;
+  width: 20% !important;
+  margin-top: 20px;
+  height: 30px;
+  margin-left: 75%;
+  text-align: right;
+  font-size: 12px;
+}
+
+/* line 103, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+section.panier .la_liste .total span {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 112, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+section.panier .la_liste #contenu2 form {
+  margin: 0 auto;
+  text-align: right;
+  margin-left: -40%;
+}
+
+/* line 116, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+section.panier .la_liste #contenu2 form label {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* line 121, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+section.panier .la_liste #contenu2 form input, section.panier .la_liste #contenu2 form textarea {
+  width: 150px;
+  height: 30px;
+}
+
+/* line 126, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+section.panier .la_liste #contenu2 .validation {
+  margin-left: 76.5%;
+}
+
+/* line 130, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+section.panier .la_liste #contenu2 .checkbox-339, section.panier .la_liste #contenu2 .checkbox-315 {
+  text-align: right;
+  width: 10%;
+  margin-right: -130px;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+/* line 140, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+section.panier #contenu3 {
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* line 143, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+section.panier #contenu3 img {
+  vertical-align: middle;
+  margin-left: 20px;
+  width: 150px;
+}
+
+/* line 148, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+section.panier #contenu3 span {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* line 152, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+section.panier #contenu3 input {
+  height: 30px;
+}
+
+/* line 159, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+.onglets {
+  display: flex;
+}
+
+/* line 160, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+.onglet {
+  width: 33%;
+  text-align: center;
+  margin: 0 .2em;
+  background: #ffdb01;
+  height: 30px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+/* line 161, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+.onglet.actif {
+  background: #FFF;
+}
+
+/* line 163, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+h2.h2_panier {
+  font-size: 2em;
+  text-align: left;
+}
+
+/* line 165, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+.contenu {
+  margin: 0 .2em;
+  padding: 1em;
+  display: none;
+}
+
+/* line 166, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_panier.scss */
+.contenu.actif {
+  background: #FFF;
+  display: block;
+}
+
+/* line 3, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_legal.scss */
+.legal h2 {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 150px;
+  background: #ffdb01;
+  color: white;
+  margin-top: 0px;
+  position: relative;
+  z-index: 2;
+  padding-left: 10%;
+  padding-top: 15px;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+/* line 22, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_legal.scss */
+.contenu_legal {
+  padding: 20px;
+  padding-top: 5px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  background: #FFF;
+  margin-top: -60px;
+  display: block;
+  width: 80%;
+  text-align: justify;
+}
+
+/* line 33, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_legal.scss */
+.contenu_legal h1 {
+  color: #ffdb01;
+}
+
+/* line 36, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_legal.scss */
+.contenu_legal h2 {
+  color: #58e8fe;
+}
+
+/* line 41, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_legal.scss */
+.compte {
+  position: relative;
+  z-index: 3;
+  padding: 15px;
+  background: #FFF;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: -40px;
+}
+
+/* line 51, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_legal.scss */
+.compte label {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* line 55, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_legal.scss */
+.compte input {
+  height: 30px;
+}
+
+/* line 59, /Applications/MAMP/htdocs/la-laiterie/wp-content/themes/La Laiterie/scss/_legal.scss */
+.compte .validation {
+  background: #ffdb01;
+  color: #000;
+  height: 30px;
+  display: block;
+  width: 180px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-left: 73%;
+  text-align: center;
+}
+
+/*# sourceMappingURL=../style.map */
